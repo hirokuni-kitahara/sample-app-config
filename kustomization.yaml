@@ -1,6 +1,6 @@
-namespace: reverse-words-stage
+namespace: reverse-words-production
 commonLabels:
-  app: reversewords-stage
+  app: reversewords-prod
 bases:
 - github.com/mvazquezc/reverse-words-cicd?ref=config
 resources:
@@ -8,4 +8,3 @@ resources:
 - ingress.yaml
 patchesStrategicMerge:
 - deployment.yaml
-
